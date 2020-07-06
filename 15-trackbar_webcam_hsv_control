@@ -19,6 +19,8 @@ cv2.createTrackbar("U-H", "Trackbars", 179, 179, nothing)
 cv2.createTrackbar("U-S", "Trackbars", 255, 255, nothing)
 cv2.createTrackbar("U-V", "Trackbars", 255, 255, nothing)
 
+# cv2.setTrackbarPos("Upper-H","Tracbar",180) şeklinde bir kullanım da yapılabilir.
+
 while True:
     _, frame = cap.read()
     frame = cv2.flip(frame, 1)
